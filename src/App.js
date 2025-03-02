@@ -4,6 +4,7 @@ import Counter from "./components/counter";
 import {Route, Link, BrowserRouter as Router, Routes} from "react-router-dom";
 import {} from "react-router";
 import About from "./components/about";
+import Gallery from "./components/gallery";
 
 function App() {
     return (
@@ -35,8 +36,14 @@ function App() {
                 {/*</Switch>*/}
 
                     <Routes>
+                        <Route path="/" element={
+                            <div>
+                                <h1>Home</h1>
+                            </div>
+                        } />
                         <Route path="/counter" element={<Counter title="Counter" image="https://picsum.photos/200/200"/>} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/gallery" element={<Gallery />} />
                     </Routes>
 
 
