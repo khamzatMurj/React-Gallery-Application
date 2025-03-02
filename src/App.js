@@ -5,6 +5,7 @@ import {Route, Link, BrowserRouter as Router, Routes} from "react-router-dom";
 import {} from "react-router";
 import About from "./components/about";
 import Gallery from "./components/gallery";
+import HintDetail from "./components/hintDetail";
 
 function App() {
     return (
@@ -44,6 +45,7 @@ function App() {
                         <Route path="/counter" element={<Counter title="Counter" image="https://picsum.photos/200/200"/>} />
                         <Route path="/about" element={<About />} />
                         <Route path="/gallery" element={<Gallery />} />
+                        <Route path="/hintDetail/:id" element={<HintDetail />} />
                     </Routes>
 
 
